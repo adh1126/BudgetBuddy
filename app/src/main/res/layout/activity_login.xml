@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/app_background">
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textSize="45sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/afacad_bold"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHello"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="@font/afacad_bold"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/afacad_semibold"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="#FD7829"
+        android:textSize="40sp"
+         />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvLoginTitle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter email"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25sp"
+                    android:layout_marginLeft="25sp"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/afacad_bold"
+                        android:textSize="18sp"
+                        android:inputType="textEmailAddress"
+                        android:drawableStart="@drawable/account"
+                        android:drawablePadding="10dp"
+                        android:background="@color/white"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25sp"
+                    android:layout_marginLeft="25sp"
+                    android:textColorHint="@color/black"
+                    app:passwordToggleEnabled="true"
+                    app:boxStrokeColor="@color/black"
+                    app:passwordToggleTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter password"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/afacad_bold"
+                        android:drawableStart="@drawable/lock"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:background="@color/white"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/orange"
+                    android:fontFamily="@font/afacad_bold"
+                    android:text="Login"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvNewUser"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Don't have any account? Sign in"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/afacad_bold"
+            android:layout_below="@+id/cvLogin"
+            android:layout_marginTop="15dp"
+            android:gravity="center"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

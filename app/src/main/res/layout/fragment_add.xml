@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AnalysisFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="Account Balance"
+        android:textColor="#161719"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/Home_accountBalnace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:text="₹2000"
+        android:textColor="#161719"
+        android:textSize="45sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addMoneybtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add money"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:backgroundTint="#00A86B"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"
+            android:layout_marginEnd="10dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/expensesbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:backgroundTint="#FD3C4A"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Transactions"
+        android:textColor="#161719"
+        android:textSize="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp">
+
+
+    </ScrollView>
+
+</LinearLayout>

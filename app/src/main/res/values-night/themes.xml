@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BudgetBuddy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
+        <item name="colorSecondary">@color/secondary_blue</item>
+        <item name="colorSecondaryVariant">@color/orange</item>
+
+        <item name="colorTertiary">@color/light_blue</item>
+
+        <item name="android:statusBarColor" >#131BDD</item>
+        <item name="android:navigationBarColor" >#131BDD</item>
+
+    </style>
+
+</resources>
